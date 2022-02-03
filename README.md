@@ -6,3 +6,5 @@
 [![Actions Status](https://github.com/LiliyaSamigullina/python-project-lvl1/workflows/run-linter/badge.svg)](https://github.com/LiliyaSamigullina/python-project-lvl1/actions)
 
 [![asciicast](https://asciinema.org/a/MTR1NIZKmqfyupYxQ47kpJnaj.svg)](https://asciinema.org/a/MTR1NIZKmqfyupYxQ47kpJnaj)
+
+[![asciicast](https://asciinema.org/a/wR1z65mmIjBe81cq28AChoqUJ.svg)](https://asciinema.org/a/wR1z65mmIjBe81cq28AChoqUJ)
