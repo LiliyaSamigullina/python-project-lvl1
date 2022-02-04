@@ -2,17 +2,18 @@ import prompt
 from random import randint
 
 
+def is_prime(n):
+    for i in range(2, int(n / 2) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
 def prime_game():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-    def is_prime(n):
-        for i in range(2, int(n / 2) + 1):
-            if n % i == 0:
-                return False
-        return True
     number_of_rounds = 3
     for _ in range(number_of_rounds):
         number = randint(2, 1000)
