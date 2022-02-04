@@ -7,6 +7,7 @@ def prime_game():
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
     def is_prime(n):
         for i in range(2, int(n / 2) + 1):
             if n % i == 0:
@@ -16,7 +17,7 @@ def prime_game():
     for _ in range(number_of_rounds):
         number = randint(2, 1000)
         print('Question: {}'.format(number))
-        if is_prime(number) == True:
+        if is_prime(number) is True:
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
