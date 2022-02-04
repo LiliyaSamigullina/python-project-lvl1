@@ -12,18 +12,15 @@ def even_game():
         number = randint(1, 100)
         print('Question: {}'.format(number))
         answer = prompt.string('Your answer: ')
-        if (number % 2 == 0
-                and answer == 'yes') or (number % 2 == 1
-                and answer == 'no'):
+        if number % 2 == 0:
+            correct_answer = 'yes'
+        else:
+            correct_answer = 'no'
+        if answer == correct_answer:
             print('Correct!')
-        elif number % 2 == 0 and answer != 'yes':
+        else:
             print("'{}' is wrong answer ;(."
-                  "Correct answer was 'yes'".format(answer))
-            print("Let's try again, {}!".format(name))
-            break
-        elif number % 2 == 1 and answer != 'no':
-            print("'{}' is wrong answer ;(."
-                  "Correct answer was 'no'.".format(answer))
+                  "Correct answer was '{}'".format(answer, correct_answer))
             print("Let's try again, {}!".format(name))
             break
     else:
