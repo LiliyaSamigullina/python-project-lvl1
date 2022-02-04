@@ -12,7 +12,7 @@ def progression_game():
     for _ in range(number_of_rounds):
         first_term = randint(1, 20)
         progression_diff = randint(1, 5)
-        hidden = randint(1, 9)
+        hidden = randint(0, 9)
         for i in range(10):
             term = first_term + i * progression_diff
             if i == hidden:
