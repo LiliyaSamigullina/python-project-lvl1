@@ -1,32 +1,19 @@
-import prompt
 from random import randint
 
 
-def progression_game():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
-    print('What number is missing in the progression?')
-    number_of_rounds = 3
-    for _ in range(number_of_rounds):
-        first_term = randint(1, 20)
-        progression_diff = randint(1, 5)
-        hidden = randint(0, 9)
-        print('Question: ', end='')
-        for i in range(10):
-            term = first_term + i * progression_diff
-            if i == hidden:
-                print('..', end=' ')
-                correct_answer = term
-            else:
-                print(term, end=' ')
-        answer = prompt.string('\nYour answer: ')
-        if answer == str(correct_answer):
-            print('Correct!')
+description = 'What number is missing in the progression?'
+
+
+def get_question_and_answer():
+    first_term = randint(1, 20)
+    progression_diff = randint(1, 5)
+    hidden = randint(0, 9)
+    question = ''
+    for i in range(10):
+        term = first_term + i * progression_diff
+        if i == hidden:
+            question += '.. '
+            correct_answer = str(term)
         else:
-            print("'{}' is wrong answer ;(."
-                  "Correct answer was '{}'.".format(answer, correct_answer))
-            print("Let's try again, {}!".format(name))
-            break
-    else:
-        print('Congratulations, {}!'.format(name))
+            question = question + str(term) + ' '
+    return question.rstrip(), correct_answer
