@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-import brain_games.games.calc
+from brain_games.common import common_game
+from brain_games.games.calc import description, get_question_and_answer
 
 
 def main():
-    brain_games.games.calc.calc_game()
+    common_game(get_question_and_answer, description)
 
 
 if __name__ == '__main__':
