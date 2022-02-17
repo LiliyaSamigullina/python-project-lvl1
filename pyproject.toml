@@ -6,6 +6,11 @@ authors = ["Liliya Samigullina <lil_1992@mail.ru>"]
 packages = [
     { include = "brain_games" },
 ]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
+repository = "https://github.com/LiliyaSamigullina/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.8"
