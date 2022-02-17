@@ -5,12 +5,18 @@
 
 [![Actions Status](https://github.com/LiliyaSamigullina/python-project-lvl1/workflows/run-linter/badge.svg)](https://github.com/LiliyaSamigullina/python-project-lvl1/actions)
 
+## Usage
+### brain-even
 [![asciicast](https://asciinema.org/a/MTR1NIZKmqfyupYxQ47kpJnaj.svg)](https://asciinema.org/a/MTR1NIZKmqfyupYxQ47kpJnaj)
 
+### brain-calc
 [![asciicast](https://asciinema.org/a/wR1z65mmIjBe81cq28AChoqUJ.svg)](https://asciinema.org/a/wR1z65mmIjBe81cq28AChoqUJ)
 
+### brain-gcd
 [![asciicast](https://asciinema.org/a/vx10ghQ6vHptn4gW5I6wenI32.svg)](https://asciinema.org/a/vx10ghQ6vHptn4gW5I6wenI32)
 
+### brain-progression
 [![asciicast](https://asciinema.org/a/QhC0yB6dPxcOlQQFMsEPLWjAk.svg)](https://asciinema.org/a/QhC0yB6dPxcOlQQFMsEPLWjAk)
 
+### brain-prime
 [![asciicast](https://asciinema.org/a/DrGZr20IbKOATwME5ky5NmVrp.svg)](https://asciinema.org/a/DrGZr20IbKOATwME5ky5NmVrp)
