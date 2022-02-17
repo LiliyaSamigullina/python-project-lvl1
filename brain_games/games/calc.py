@@ -1,3 +1,4 @@
+import operator
 from random import randint, choice
 
 
@@ -5,14 +6,14 @@ description = 'What is the result of the expression?'
 
 
 def get_question_and_answer():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    operation = choice(['+', '-', '*'])
-    question = '{} {} {}'.format(number1, operation, number2)
-    if operation == '+':
-        correct_answer = str(number1 + number2)
-    elif operation == '-':
-        correct_answer = str(number1 - number2)
-    else:
-        correct_answer = str(number1 * number2)
+    operand_left = randint(1, 100)
+    operand_right = randint(1, 100)
+    operations = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul
+    }
+    operation = choice(list(operations.keys()))
+    question = '{} {} {}'.format(operand_left, operation, operand_right)
+    correct_answer = str(operations[operation](operand_left, operand_right))
     return question, correct_answer
