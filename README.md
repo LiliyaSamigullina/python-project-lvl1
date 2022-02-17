@@ -6,8 +6,8 @@
 [![Actions Status](https://github.com/LiliyaSamigullina/python-project-lvl1/workflows/run-linter/badge.svg)](https://github.com/LiliyaSamigullina/python-project-lvl1/actions)
 
 ## Usage
-### brain-even
-[![asciicast](https://asciinema.org/a/MTR1NIZKmqfyupYxQ47kpJnaj.svg)](https://asciinema.org/a/MTR1NIZKmqfyupYxQ47kpJnaj)
+### installation and brain-even
+[![asciicast](https://asciinema.org/a/5ZKhxN5EHKJ9VOldeOZgWOqRb.svg)](https://asciinema.org/a/5ZKhxN5EHKJ9VOldeOZgWOqRb)
 
 ### brain-calc
 [![asciicast](https://asciinema.org/a/wR1z65mmIjBe81cq28AChoqUJ.svg)](https://asciinema.org/a/wR1z65mmIjBe81cq28AChoqUJ)
