@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from brain_games.common import run_game
+from brain_games.engine import run_game
 from brain_games.games.prime import description, get_question_and_answer
 
 
