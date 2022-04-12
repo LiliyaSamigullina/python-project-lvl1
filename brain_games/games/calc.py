@@ -2,7 +2,8 @@ import operator
 from random import randint, choice
 
 
-description = 'What is the result of the expression?'
+def get_description():
+    return 'What is the result of the expression?'
 
 
 def get_question_and_answer():

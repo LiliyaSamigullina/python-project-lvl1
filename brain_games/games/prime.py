@@ -1,18 +1,21 @@
 from random import randint
 
 
-description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+def get_description():
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(n):
-    for i in range(2, int(n / 2) + 1):
-        if n % i == 0:
+def is_prime(number):
+    if number in {0, 1}:
+        return False
+    for divider in range(2, int(number / 2) + 1):
+        if number % divider == 0:
             return False
     return True
 
 
 def get_question_and_answer():
-    question = randint(2, 1000)
+    question = randint(0, 1000)
     if is_prime(question) is True:
         correct_answer = 'yes'
     else:
