@@ -15,6 +15,6 @@ def get_question_and_answer():
         '*': operator.mul
     }
     operation = choice(list(operations.keys()))
-    question = '{} {} {}'.format(operand_left, operation, operand_right)
+    question = '{0} {1} {2}'.format(operand_left, operation, operand_right)
     correct_answer = str(operations[operation](operand_left, operand_right))
     return question, correct_answer
