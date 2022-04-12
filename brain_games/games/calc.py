@@ -1,12 +1,13 @@
 import operator
 from random import randint, choice
+from typing import Tuple
 
 
-def get_description():
+def get_description() -> str:
     return 'What is the result of the expression?'
 
 
-def get_question_and_answer():
+def get_question_and_answer() -> Tuple[str]:
     operand_left = randint(1, 100)
     operand_right = randint(1, 100)
     operations = {
