@@ -3,7 +3,7 @@ from brain_games.engine import run_game
 from brain_games.games import even
 
 
-def main():
+def main() -> None:
     run_game(even)
 
 

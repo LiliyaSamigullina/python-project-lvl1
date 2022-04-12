@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "The Brain Games"
+description = "The Brain Games - five console mathematical games"
 authors = ["Liliya Samigullina <lil_1992@mail.ru>"]
 packages = [
     { include = "brain_games" },
 ]
 classifiers = [
+    "Environment :: Console",
     "Programming Language :: Python :: 3.8",
     "Topic :: Games/Entertainment :: Puzzle Games"
 ]
